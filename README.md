@@ -7,6 +7,7 @@ A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pok�
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Sandbox](#sandbox)
 
 
 ## Features
@@ -27,29 +28,6 @@ pokeapi_sdk = "0.1.0"
 ```
 
 ## Usage
-
-Retrieving a Pokémon by ID
-
-```rust
-use pokeapi_sdk::PokeApiClient;
-use tokio;
-
-#[tokio::main]
-async fn main() {
-    let client = PokeApiClient::default();
-
-    // Retrieve a Pokémon by ID
-    match client.get_pokemon_by_id(25).await {
-        Ok(pokemon) => {
-            println!("Name: {}", pokemon.name);
-            println!("ID: {}", pokemon.id);
-            println!("Height: {}", pokemon.height);
-            println!("Weight: {}", pokemon.weight);
-        }
-        Err(e) => eprintln!("Error retrieving Pokémon: {}", e),
-    }
-}
-```
 
 Retrieving a Pokémon by name
 
@@ -97,4 +75,14 @@ async fn main() {
     println!("Total Pokémon fetched: {}", all_pokemon.len());
 }
 ```
+
+## Sandbox
+
+Try it yourself! I've included code snippets you can explore, tinker with, or delete entirely in https://github.com/sheldonvaughn/rust_pokeapi/blob/main/examples/main.rs
+
+Run the code with
+
+```bash
+cargo run --example main
+
 

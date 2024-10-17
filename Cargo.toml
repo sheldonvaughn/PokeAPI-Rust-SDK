@@ -1,0 +1,22 @@
+[package]
+name = "pokeapi_sdk"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust SDK for the PokeAPI."
+license = "MIT"
+repository = "https://github.com/yourusername/pokeapi_sdk"
+readme = "README.md"
+keywords = ["pokemon", "api", "sdk", "rust"]
+categories = ["api-bindings", "SDK", "Pocket Monsters"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "gzip"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+thiserror = "1.0"
+log = "0.4"
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["macros"] }
+env_logger = "0.9"

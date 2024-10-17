@@ -1,6 +1,9 @@
+
+![ferris_pokemon](https://github.com/user-attachments/assets/9b99964a-2a99-4805-96df-c0b29c83f7df)
+
 # PokeAPI SDK
 
-A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pokémon data.
+A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pokémon data. For when you gotta catch 'em all. With type safety.
 
 ## Table of Contents
 

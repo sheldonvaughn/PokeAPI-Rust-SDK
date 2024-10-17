@@ -9,7 +9,7 @@ A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pok√
 - [Installation](#installation)
 - [Usage](#usage)
 - [Sandbox](#sandbox)
-
+- [Tools and Libraries](#tools-and-libraries)
 
 ## Features
 

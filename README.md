@@ -85,5 +85,39 @@ Run the code with
 
 ```bash
 cargo run --example main
+```
+
+## Tools and Libraries
+
+- **Rust**
+  
+  The programming language used to develop this SDK, offering performance and safety.
+
+- **Reqwest**
+  
+  A powerful, ergonomic HTTP client for making API requests.
+
+- **Tokio**
+  
+  An asynchronous runtime for Rust, enabling high-performance networking.
+
+- **Serde**
+  
+  A framework for serializing and deserializing Rust data structures efficiently and generically.
+
+- **Thiserror**
+  
+  A library for deriving error types, simplifying error handling in Rust.
+
+- **Log**
+  
+  Provides a logging facade, allowing for configurable log output.
+
+- **Env_logger**
+  
+  A logger implementation for Rust that works with the `log` crate, useful for debugging.
+
+---
+
 
 

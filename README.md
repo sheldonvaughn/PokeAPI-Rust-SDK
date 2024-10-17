@@ -8,7 +8,7 @@ A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pok√
 - Fetch data about Pok√©mon Generations.
 - Asynchronous API calls using `async`/`await`.
 - Comprehensive error handling with custom error types.
-- Well-documented and idiomatic Rust code.
+- Autopagination
 
 ## Installation
 

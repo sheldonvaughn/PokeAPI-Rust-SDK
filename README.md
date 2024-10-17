@@ -74,9 +74,7 @@ async fn main() {
 }
 ```
 
-Listing Pokèmon with Pagination
-
-**PokeAPI uses the same functions with no parameter to return paginated results**
+Listing Pokèmon with Pagination and Autopagination
 
 ```rust
 use pokeapi_sdk::PokeApiClient;

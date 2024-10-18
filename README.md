@@ -67,7 +67,7 @@ async fn main() {
     let client = PokeApiClient::default();
 
     // List first 10 Pokémon without autopagination
-    // The third parameter 'autopaginate (bool)' enables the usage of autopagination
+    // The third parameter 'autopaginate: bool' controls the usage of autopagination
     let pokemon_list = client.list_pokemon(Some(10), None, false).await.unwrap();
     println!("First 10 Pokémon:");
     for pokemon in &pokemon_list {

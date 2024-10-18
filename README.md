@@ -14,10 +14,11 @@ A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pok�
 ## Features
 
 - Retrieve detailed information about Pokémon by ID or name.
-- Fetch data about Pokémon Generations.
+- Fetch data about Pokémon Generations by ID or name.
 - Asynchronous API calls using `async`/`await`.
 - Comprehensive error handling with custom error types.
 - Autopagination
+- Built in examples for a true sandbox experience. Run the client and test the functions.
 
 ## Installation
 

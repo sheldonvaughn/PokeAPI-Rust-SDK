@@ -1,5 +1,5 @@
 use crate::error::PokeApiError;
-use crate::models::{Generation, NamedAPIResource, NamedAPIResourceList, Pokemon};
+use crate::models::{Generation, NamedApiResource, NamedApiResourceList, Pokemon};
 use log::debug;
 use reqwest::Client;
 
@@ -106,7 +106,7 @@ impl PokeApiClient {
         limit: Option<u32>,
         offset: Option<u32>,
         autopaginate: bool,
-    ) -> Result<Vec<NamedAPIResource>, PokeApiError> {
+    ) -> Result<Vec<NamedApiResource>, PokeApiError> {
         self._get_paginated_resources("pokemon", limit, offset, autopaginate)
             .await
     }
@@ -123,7 +123,7 @@ impl PokeApiClient {
         limit: Option<u32>,
         offset: Option<u32>,
         autopaginate: bool,
-    ) -> Result<Vec<NamedAPIResource>, PokeApiError> {
+    ) -> Result<Vec<NamedApiResource>, PokeApiError> {
         self._get_paginated_resources("generation", limit, offset, autopaginate)
             .await
     }
@@ -135,7 +135,7 @@ impl PokeApiClient {
         limit: Option<u32>,
         offset: Option<u32>,
         autopaginate: bool,
-    ) -> Result<Vec<NamedAPIResource>, PokeApiError> {
+    ) -> Result<Vec<NamedApiResource>, PokeApiError> {
         let mut results = Vec::new();
         let mut next_url = Some({
             let mut url = format!("{}{}", self.base_url, endpoint);
@@ -172,7 +172,7 @@ impl PokeApiClient {
                 });
             }
 
-            let page: NamedAPIResourceList = response
+            let page: NamedApiResourceList = response
                 .json()
                 .await
                 .map_err(PokeApiError::DeserializationError)?;

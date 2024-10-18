@@ -8,6 +8,7 @@ A Rust SDK for the [PokeAPI](https://pokeapi.co/), providing easy access to Pok√
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Testing](#testing)
 - [Sandbox](#sandbox)
 - [Tools and Libraries](#tools-and-libraries)
 
@@ -27,6 +28,7 @@ Add the following to your `Cargo.toml`:
 ```toml
 [dependencies]
 pokeapi_sdk = "0.1.0"
+tokio = { version = "1", features = ["full"] }
 ```
 
 ## Usage
@@ -77,12 +79,21 @@ async fn main() {
     println!("Total Pok√©mon fetched: {}", all_pokemon.len());
 }
 ```
+## Testing
+
+This library contains a suite of unit tests to ensure each function both works and fails as expected. 
+
+Run the unit tests with:
+
+```bash
+cargo run --example main
+```
 
 ## Sandbox
 
 Try it yourself! I've included code snippets you can explore, tinker with, or delete entirely in https://github.com/sheldonvaughn/rust_pokeapi/blob/main/examples/main.rs
 
-Run the code with
+Run the code with:
 
 ```bash
 cargo run --example main
